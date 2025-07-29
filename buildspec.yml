@@ -30,7 +30,6 @@ phases:
       - aws ec2 describe-instances
       - echo Build completed on `date`
       - echo This line is added in child branch
-      - bash test.sh
     finally:
       - echo This always runs even if the install command fails
   post_build:
